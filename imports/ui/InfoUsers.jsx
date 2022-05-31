@@ -12,7 +12,7 @@ return (
       <h1>Users</h1>
       <ul>{users.map(
         user => <li key={user._id}>
-            <p>{user.userName+ ' '+' '+user.email+' '+ user.createAt}</p>
+            <p>{user.nom+ ' '+user.prenom+ ' '+' '+user.email+' '+ user.password}</p>
         </li>
         
       )}</ul>

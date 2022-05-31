@@ -1,5 +1,4 @@
-import React from 'react';
-import { useTracker } from 'meteor/react-meteor-data';
+import React from 'react'; 
 import { LinksCollection } from '../api/links';
 
 function classNames(...classes) {

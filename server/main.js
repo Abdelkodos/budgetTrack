@@ -31,8 +31,14 @@ function insertLink({ title, url }) {
 //   }
 // });
 
-function insertUser({ userName, email, password }) {
-  UsersCollection.insert({userName, email, password, createdAt: new Date()});
+function insertUser({ nom, prenom, email, password }) {
+  UsersCollection.insert({nom, prenom, email, password, createdAt: new Date()});
+}
+
+function findUser({e, p}) {
+  UsersCollection.findOne({
+      email: e,
+      password: p});
 }
 
 Meteor.startup(() => {

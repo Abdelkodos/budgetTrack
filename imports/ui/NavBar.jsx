@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from 'react';
 
 export default function NavBar() {
 //     const button = document.querySelector('#menu-button');
@@ -28,8 +28,8 @@ export default function NavBar() {
             </div>
             <div id="menu" className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                 <div className="text-xl lg:flex-grow text-amber-900 font-semibold">
-                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 space-x-6">Dépences</a>
-                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 space-x-6">Revenus</a>
+                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 space-x-6"><input type="radio" name="budget"/>Dépences</a>
+                    <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4 space-x-6"><input type="radio" name="budget"/>Revenus</a>
                     <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white">Profil</a>
                 </div>
             </div>
